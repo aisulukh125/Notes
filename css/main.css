@@ -1,0 +1,142 @@
+*{
+	margin: 0;
+	padding: 0;
+ 	font-family: "montserrat", sans-serif;
+ 	box-sizing: border-box;
+}
+
+body{
+	background: rgb(0,212,255);
+	background: linear-gradient(70deg, rgba(0,212,255,1) 0%, rgba(199,98,223,1) 48%, rgba(67,65,99,1) 100%);
+	min-height: 100vh;
+	overflow: hidden;
+}
+
+h1{
+	margin-bottom: 20px;
+}
+
+#container-fluid{
+	width: 80%;
+	margin: 17% 10%;
+}
+.btn{
+	margin: 0 30px 30px;
+}
+
+.add-btn{
+	padding: 10px;
+	font-size: 18px;
+	background-color: #dc143c;
+}
+
+.notes{
+	display: block;
+	max-height: 60vh;
+	overflow: auto;
+}
+::-webkit-scrollbar{
+	display: none;
+}
+
+h3{
+	margin: 10px 0;
+	color: #C41E3A;
+	font-weight: bold;
+}
+
+.note{
+	width: 100%;
+	background: rgba(220, 20, 60, 0.5);
+	color: #faf0be;
+	padding: 18px;
+	margin: 6px 0;
+	overflow: auto;
+}
+.note h4{
+	color: #faf0be;
+}
+
+.todoPoint{
+	width: 100%;
+	color: #faf0be;
+	padding: 18px 0 18px 18px;
+	margin: 6px 0;
+	overflow: hidden;
+	text-align: left;
+	display: block;
+	align-items: center;
+}
+.todoPoint p{
+	margin: 0;
+}
+
+.note i{
+	float: right;
+	margin-left: 20px;
+	margin-bottom: 0;
+	cursor: pointer;
+}
+
+#inputBlock, #printBlock {
+	position: absolute;
+	width: 60vw;
+	height: fit-content;
+	max-height: 60%;
+	overflow: auto;
+	top: 20%;
+	left: 20vw;
+	padding: 20px 0;
+	background: rgb(120, 20, 60);
+	box-shadow: 0 0 30px #671119;
+	border-radius: 20px;
+	z-index: 2;
+
+	text-align: center;
+	color: white;
+}
+
+#inputBlock input {
+	display: block;
+	width: 80%;
+	padding: 10px 15px;
+	margin: 10px auto;
+	overflow: auto;
+}
+#inputBlock button {
+	width: fit-content;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+#inputCancel {
+	position: fixed;
+	right: 0;
+	top: 0;
+	background-color: rgba(0, 0, 0, .4);
+	width: 100vw;
+	height: 100vh;
+}
+
+#alertBlock {
+	background-color: olive;
+	box-shadow: 0 0 30px darkolivegreen;
+	border-radius: 20px;
+	padding: 5px 0;
+	text-align: center;
+	color: white;
+}
+
+.todoText, .todoCheck {
+	display: inline-block !important;
+}
+.todoCheck{
+	width: 20px !important;
+}
+.todoText{
+	width: calc(80% - 30px) !important;
+}
+
+#printBlock .todoPoint{
+	padding: 0;
+}
